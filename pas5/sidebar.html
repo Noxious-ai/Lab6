@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .sidebar{
+                height: 100%;
+                width: 160px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            .main{
+                margin-left: 160px;
+                font-size: 28px;
+                padding: 0px 10px;
+            }
+
+            .sidebar a{
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+            .sidebar a:hover{
+                color: #f1f1f1;
+            }
+
+            /* Reset basic spacing */
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+
+            .container {
+            width: 180px;          /* total grid width */
+            margin: 50px auto;     /* center it horizontally */
+            }
+
+            .row {
+            clear: both;           /* start new line after every 3 cells */
+            }
+
+            /* Each square cell */
+            .square {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000;
+            float: left;           /* float side by side */
+            }
+
+            /* Optional styling */
+            h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            display: block;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "sidebar">
+            <a href = "#about">About</a>
+            <a href = "#services">Services</a>
+            <a href = "#contact">Contact</a>
+        </div>
+        <div class = "main">
+            <h2>Sidebar demo</h2>
+            <p>
+                <a name = "about"></a>About section</p>
+                <div>
+                    This is some text about us.
+                </div>
+            </p>
+            <p>
+                <a name = "services"></a>Services section</p> 
+                <div>
+                    This is some text about our services.     
+            </p>
+            <p>
+                <a name = "contact"></a>Contact section</p>
+                <div>
+                    This is some text about how to contact us.
+                </div>
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1>Tic Tac Toe</h1>
+            </div>
+
+            <div class="row">
+                <div class="top left square"></div>
+                <div class="top middle square"></div>
+                <div class="top right square"></div>
+            </div>
+
+            <div class="row">
+                <div class="middle left square"></div>
+                <div class="middle center square"></div>
+                <div class="middle right square"></div>
+            </div>
+
+            <div class="row">
+                <div class="bottom left square"></div>
+                <div class="bottom middle square"></div>
+                <div class="bottom right square"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
